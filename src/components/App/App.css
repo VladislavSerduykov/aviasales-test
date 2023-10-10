@@ -1,0 +1,23 @@
+@import url(../../vendor/normalize.css);
+
+@import url(../../vendor/fonts/fonts.css);
+
+html {
+  background: url(../../images/Back.svg) center no-repeat;
+  background-size:  cover;
+}
+
+
+.app{
+  --text-main:#fff;
+  --error-text:#FC1E1F;
+  --count-not_complited:#676d7e;
+  --text-gradient:conic-gradient(from 159.34deg at 44.88% 50%, #2B65FB 0deg, #28D8FF 148.13deg, #85FFB6 307.63deg, #17C213 360deg);
+  --button-gradient: linear-gradient(to right,#32ba57, #1987aa);
+  --border-gradient:linear-gradient(95.89deg, rgba(255, 30, 30, 0.988235) 11.34%, #C7971C 93.32%);
+  --form-border:#5aed7c;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
