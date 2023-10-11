@@ -1,25 +1,20 @@
-import React from "react";
+import { useState } from "react";
 import "./Form.css";
 import Button from "../Button/Button";
-import {
-  BUTTON_TEXT,
-  COUNT,
-  INPUT_TEXT,
-  ERROR_TEXT,
-} from "../../utils/text-config";
-import Input from "../Input/Input";
 
-function Form() {
+function Form({ disabled,children, count, title_text, button_text, error_text }) {
+  const [isDisabled, setIsDisabled] = useState(true)
+
   return (
-    <form className="form">
+    <form className={`form ${disabled ? '' : 'form-disabled'}`}>
       <div className="form-container">
         <h2 className="form-title">
-          <span className="count">{COUNT.FIRST}</span>
-          {INPUT_TEXT.EMAIL_TEXT}
+          <span className={`count ${disabled ? '' : 'count-disabled'}`}>{count}</span>
+          {title_text}
         </h2>
-        <Input />
-        <span className="input-error">{ERROR_TEXT.EMAIL_ERROR}</span>
-        <Button text={BUTTON_TEXT.EMAIL_BUTTON} />
+        {children}
+        <span className="input-error"></span>
+        <Button text={button_text} />
       </div>
     </form>
   );

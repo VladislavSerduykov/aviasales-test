@@ -3,13 +3,15 @@ import './Input.css'
 
 function Input() {
   return (
+    <div className="input-container">
     <input
       type="email"
       name="email"
       required
-      placeholder="Ввести email"
       className="form-input"
+      placeholder="Введите email"
     />
+    </div>
   );
 }
 

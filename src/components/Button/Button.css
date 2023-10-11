@@ -4,6 +4,7 @@
     border: none;
     background: var(--button-gradient);
     transition: all .3s ease;
+    margin-top: 7px;
 }
 
 .text-button {
@@ -18,6 +19,14 @@
 }
 
 .button:hover {
+    background: var(--button-hover);
     cursor: pointer;
-    opacity: .8;
+}
+
+.button-pressed {
+    background: var(--button-pressed);
+}
+
+.button:disabled{
+    opacity: .6;
 }

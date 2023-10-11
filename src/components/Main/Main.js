@@ -1,7 +1,9 @@
 import React from "react";
 import "./Main.css";
 import Form from "../Form/Form";
-import { TITLE_TEXT } from "../../utils/text-config";
+import { TITLE_TEXT,INPUT_TEXT, BUTTON_TEXT  } from "../../utils/text-config";
+import Input from "../Input/Input";
+import ShareButtons from "../ShareButtons/ShareButtons";
 
 function Main() {
   return (
@@ -14,8 +16,11 @@ function Main() {
           {TITLE_TEXT.NOT_COMPLITED.SECONDARY_TEXT}
         </h2>
         <p className="text">{TITLE_TEXT.PARAGRAPH_TEXT.MAIN_TEXT}</p>
-        <Form />
       </div>
+      <div className="main-container">
+        <Form disabled={true} children={<Input/>} count={1} title_text={INPUT_TEXT.EMAIL_TEXT} button_text={BUTTON_TEXT.EMAIL_BUTTON} />
+        <Form disabled={false} children={<ShareButtons/>} count={2} title_text={INPUT_TEXT.SHARE_TEXT} button_text={BUTTON_TEXT.SHARE_BUTTON} />
+        </div>
     </section>
   );
 }

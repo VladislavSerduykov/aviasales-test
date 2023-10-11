@@ -12,10 +12,16 @@ html {
   --text-main:#fff;
   --error-text:#FC1E1F;
   --count-not_complited:#676d7e;
+  --count-disabled:#30b858;
   --text-gradient:conic-gradient(from 159.34deg at 44.88% 50%, #2B65FB 0deg, #28D8FF 148.13deg, #85FFB6 307.63deg, #17C213 360deg);
   --button-gradient: linear-gradient(to right,#32ba57, #1987aa);
+  --button-hover: linear-gradient(to right,#0bb8de, #0389e4);
+  --button-pressed: linear-gradient(to right,#4254a3, #2654c2);
   --border-gradient:linear-gradient(95.89deg, rgba(255, 30, 30, 0.988235) 11.34%, #C7971C 93.32%);
-  --form-border:#5aed7c;
+  --icon-fb:linear-gradient(142.25deg, #60AAFF 20.57%, #2787F5 50.89%, #005CC6 78.79%);
+  --icon-vk:linear-gradient(142.25deg, #60AAFF 20.57%, #2787F5 50.89%, #005CC6 78.79%);
+  --icon-tw:linear-gradient(141.2deg, #73CAFF 20.61%, #1DA1F2 50.17%, #007CC8 82.31%);
+  --icon-insta:linear-gradient(142.25deg, #D82D7E 20.57%, #DF406C 48.47%, #FA8F21 78.79%);
   display: flex;
   flex-direction: column;
   width: 100vw;

@@ -1,0 +1,43 @@
+.share-container {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    width: 252px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-links {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-links_fb {
+    background: var(--icon-fb);
+    box-shadow: 0px 4px 5px 0px #000C2380;
+    box-shadow: -10px 0px 20px 0px #003ADA59;
+}
+
+.share-links_vk {
+    background: var(--icon-vk);
+    box-shadow: 0px 4px 5px 0px #000C2380;
+    box-shadow: -8px -5px 20px 0px #0077FF75;
+}
+
+.share-links_tw {
+    background: var(--icon-tw);
+    box-shadow: 0px 4px 5px 0px #000C2380;
+    box-shadow: -8px 3px 20px 0px #009EFF66;
+}
+
+.share-links_inst {
+    background: var(--icon-insta);
+    box-shadow: 0px 4px 5px 0px #000C2380;
+    box-shadow: -10px 0px 20px 0px #FF006C54;
+}

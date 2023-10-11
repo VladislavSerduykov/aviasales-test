@@ -1,5 +1,6 @@
 .main {
     display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -16,7 +17,7 @@
     padding-top: 94px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -58,4 +59,13 @@
     text-align: left;
     color: var(--text-main);
     max-width: 497px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(280px + 280px + 24px);
+    margin: 0;
+    padding-left: 330px;
+    gap: 24px;
 }
